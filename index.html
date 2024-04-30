@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorgeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div id="modal">
+            <div>
+                <h2 class="modal-titulo">
+                    Resultado da Conta
+                </h2>
+            </div>
+            <div>
+                <p id="resultado"></p>
+            </div>
+        </div>
+        <div class="calculadora">
+            <div>
+                <h1 class="titulo-calculadora">Calculadora de Gorgetas</h1>
+            </div>
+            <div class="corpo-calculadora">
+                <div class="form-part">
+                    <label for="conta" class="label-form">Valor da conta.</label>
+                    <input type="number" id="conta" placeholder="R$" class="f_campo">
+                </div>
+                <div class="form-part">
+                    <label for="convidados" class="label-form">Quantidade de convidados.</label>
+                    <input type="number" id="convidados" placeholder="QNTD" class="f_campo">
+                </div>
+                <div class="form-part">
+                    <label for="conta" class="label-form">Avaliação do serviço.</label>
+                    <select name="avaliacao" id="avaliacao" class="f_campo">
+                        <option value="30">Perfeito (30%)</option>
+                        <option value="20">Bom (20%)</option>
+                        <option value="15">Foi ok (15%)</option>
+                        <option value="10">Ruim (10%)</option>
+                        <option value="5">Pessimo (5%)</option>
+                    </select>
+                </div>
+                <div class="calcula-form">
+                    <div class="form-part">
+                        <button type="button" onclick="calculaConta()" class="btn">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
